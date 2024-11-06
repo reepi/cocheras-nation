@@ -1,16 +1,16 @@
 <main>
     <table>
         <thead>
-            <td>Media hora<hr></td>
-            <td>Una hora<hr></td>
-            <td>Diario<hr></td>
+            <td>1/2 hora<hr></td>
+            <td>1 hora<hr></td>
+            <td>Dia<hr></td>
         </thead>
         <tbody>            
             @for (fee of feesService.fees; track $index) {
                 <td class="row">
                     <div>
                         <p>${{ fee.value }}</p>
-                        <button class="icon-button" (click)="editFee(fee.type)"><img src="icons/edit.png" alt="Deshabilitar cochera"></button>
+                        <button (click)="editFee(fee.type)">MODIFICAR</button>
                     </div>
                 </td>
             }            

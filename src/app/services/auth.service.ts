@@ -21,17 +21,24 @@ export class authService {
       body: JSON.stringify(loginData),
     })
     
-    if(res.status !== 200) return;
+    if(res.status !== 200) return; 
 
     const resJson: ILoginRes = await res.json();
     if(!resJson.token) return;
 
-    const decodedToken: IDecodedToken = this.decodeToken(resJson.token);
+    const decodedToken: IDecodedToken = this.decodeToken(resJson.token); //Decodifico el token
     
-    localStorage.setItem("given_name", decodedToken.given_name);
+    localStorage.setItem("given_name", decodedToken.given_name); //Lo guardo en local storage
     localStorage.setItem("exp", decodedToken.exp);
     localStorage.setItem("token", resJson.token);
     return resJson;
+  }
+
+  logout(){ //Debería usar este en el header
+    localStorage.setItem("given_name", "");
+    localStorage.setItem("exp", "");
+    localStorage.setItem("token", "");
+    return;
   }
 
   async register(registerData: IRegister){

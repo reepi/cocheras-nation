@@ -35,7 +35,11 @@ export const routes: Routes = [
         ]
     },
     {
-        path: '**',
+        path: " ", //vacio
+        redirectTo: 'login'
+    },
+    {
+        path: '**', //cualquier cosa
         redirectTo: 'login'
     }
 ];

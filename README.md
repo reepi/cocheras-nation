@@ -1,3 +1,17 @@
+
+BUGS
+
+(x) Los fetch no llegan al back
+(x) Poner un poco más lindos los botones
+(x) Guards
+(x) variables de entorno
+(x) Fondo en el botón de deshabilitar
+(x) BOTON DE DESLOGEO
+() Cuando la url está vacía me debería mandar a login
+() PAGINA de NOTFOUND (404), hacerle un boton de BACK a login tmb
+() Transición rara en los botones de swal,
+() Cambiarle el fondo de los botones de sweet alerts ME ESTAN DEJANDO CIEGO
+
 <h2>Backend: </h2>
 El backend está en https://github.com/ezewheel/Parking
 

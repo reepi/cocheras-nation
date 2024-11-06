@@ -51,7 +51,7 @@ main {
             width: 30rem;
             border: none;
             outline: none;
-            border-bottom: 1px solid colors.$underline-color;
+            border-bottom: 1px solid colors.$secondary-color;
             font-size: 1.1rem;
         }
 
@@ -70,7 +70,7 @@ main {
             button {
                 font-size: 1.1rem;
                 background-color: colors.$secondary-color;
-                color: white;
+                color: rgb(17, 17, 17);
                 border-radius: 20px;
                 width: 48%;
                 border: none;
@@ -80,7 +80,7 @@ main {
             }
 
             button:hover {
-                filter: brightness(1.5);
+                background-color: colors.$main-color;
             }
         }
     }
@@ -88,9 +88,9 @@ main {
 
 .alert {
     margin: auto;
-    position: absolute;
+    position: center;
     font-size: large;
     font-weight: bold;
-    color: rgb(253, 56, 56);
+    color: rgb(255, 255, 255);
     text-align: center;
 }

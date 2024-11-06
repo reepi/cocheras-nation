@@ -1,13 +1,5 @@
 @use './../../../../public/styles/colors.scss';
 
-.icon-button {
-    border: none;
-    cursor: pointer;
-    img {
-        max-height: 2rem;
-        object-fit: cover;
-    }
-}
 
 main {
     display: flex;
@@ -24,9 +16,10 @@ table {
     font-size: 2rem;
     div {
         display: flex;
+        flex-direction: column;
         justify-content: center;
         * {
-            height: 2rem;
+            height: 3rem;
         }
     }
 }
@@ -40,4 +33,20 @@ td {
 thead {
     font-size: 2.5rem;
     font-weight: bold;
+}
+
+button {
+    color: black;  
+    background-color: rgb(180, 173, 215);
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    font-size: large;
+    border: 2px solid rgb(8, 8, 8);
+    margin-top: 2rem;
+}
+
+button:hover{
+    background-color: colors.$main-color;
+    transition: 200ms;
+    cursor: pointer;
 }

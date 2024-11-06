@@ -15,4 +15,9 @@ export class HeaderComponent {
   getUser() {
     return localStorage.getItem("given_name");
   }
+
+  logout(){
+    localStorage.clear();
+    return;
+  }
 }

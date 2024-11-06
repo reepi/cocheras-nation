@@ -5,6 +5,7 @@
         <a [routerLink]="['/dashboard']" routerLinkActive="link-activo" >ESTADO COCHERAS</a>
         <a [routerLink]="['/reports']" routerLinkActive="link-activo" >REPORTES</a>
         <a [routerLink]="['/fees']" routerLinkActive="link-activo" >PRECIOS</a>
+        <a [routerLink]="['/login']" (click)="logout()">LOGOUT</a>
     </nav>
 </header>
 <router-outlet/>
