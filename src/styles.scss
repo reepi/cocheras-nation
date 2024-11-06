@@ -1,0 +1,8 @@
+@use './../public/styles/reset.scss';
+@use './../public/styles/colors.scss';
+
+* {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: colors.$font-color;
+    background-color: colors.$background-color;
+}

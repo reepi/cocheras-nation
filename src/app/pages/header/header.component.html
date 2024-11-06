@@ -1,0 +1,10 @@
+<header>
+    <h1>Cocheras Nation</h1>
+    <p class="welcome">Usuario: {{getUser()}}</p>
+    <nav>
+        <a [routerLink]="['/dashboard']" routerLinkActive="link-activo" >ESTADO COCHERAS</a>
+        <a [routerLink]="['/reports']" routerLinkActive="link-activo" >REPORTES</a>
+        <a [routerLink]="['/fees']" routerLinkActive="link-activo" >PRECIOS</a>
+    </nav>
+</header>
+<router-outlet/>
